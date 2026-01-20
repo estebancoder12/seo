@@ -1,0 +1,1335 @@
+<!doctype html>
+<html lang="es" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEO – Buenas prácticas</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <style>
+    body {
+      box-sizing: border-box;
+    }
+    
+    .font-heading {
+      font-family: 'Manrope', sans-serif;
+    }
+    
+    .font-body {
+      font-family: 'Inter', sans-serif;
+    }
+    
+    .nav-link.active {
+      background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+      color: white;
+    }
+    
+    .content-section {
+      scroll-margin-top: 2rem;
+    }
+    
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full font-body bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
+  <div class="h-full w-full flex"><!-- Sidebar Navigation -->
+   <aside class="w-72 bg-slate-900 text-slate-100 overflow-y-auto flex-shrink-0">
+    <div class="p-6 border-b border-slate-700">
+     <h1 id="mainTitle" class="font-heading text-xl font-bold text-white mb-1">SEO – Buenas prácticas</h1>
+     <p class="text-xs text-slate-400">Guía completa y detallada</p>
+    </div>
+    <nav class="p-4">
+     <ul class="space-y-1">
+      <li><a href="#section-1" class="nav-link block px-4 py-3 rounded-lg hover:bg-slate-800 transition-colors">
+        <div class="flex items-start gap-3"><span class="text-lg flex-shrink-0">📋</span>
+         <div>
+          <p class="font-semibold text-sm">Buenas prácticas generales</p>
+          <p class="text-xs text-slate-400 mt-0.5">Fundamentos esenciales</p>
+         </div>
+        </div></a></li>
+      <li><a href="#section-2" class="nav-link block px-4 py-3 rounded-lg hover:bg-slate-800 transition-colors">
+        <div class="flex items-start gap-3"><span class="text-lg flex-shrink-0">🔍</span>
+         <div>
+          <p class="font-semibold text-sm">¿Qué es SEO?</p>
+          <p class="text-xs text-slate-400 mt-0.5">Conceptos básicos</p>
+         </div>
+        </div></a></li>
+      <li><a href="#section-3" class="nav-link block px-4 py-3 rounded-lg hover:bg-slate-800 transition-colors">
+        <div class="flex items-start gap-3"><span class="text-lg flex-shrink-0">📄</span>
+         <div>
+          <p class="font-semibold text-sm">SEO On Page</p>
+          <p class="text-xs text-slate-400 mt-0.5">Contenido interno</p>
+         </div>
+        </div></a></li>
+      <li><a href="#section-4" class="nav-link block px-4 py-3 rounded-lg hover:bg-slate-800 transition-colors">
+        <div class="flex items-start gap-3"><span class="text-lg flex-shrink-0">🌐</span>
+         <div>
+          <p class="font-semibold text-sm">SEO Off Page</p>
+          <p class="text-xs text-slate-400 mt-0.5">Autoridad externa</p>
+         </div>
+        </div></a></li>
+      <li><a href="#section-5" class="nav-link block px-4 py-3 rounded-lg hover:bg-slate-800 transition-colors">
+        <div class="flex items-start gap-3"><span class="text-lg flex-shrink-0">⚙️</span>
+         <div>
+          <p class="font-semibold text-sm">SEO Técnico</p>
+          <p class="text-xs text-slate-400 mt-0.5">Funcionamiento</p>
+         </div>
+        </div></a></li>
+      <li><a href="#section-6" class="nav-link block px-4 py-3 rounded-lg hover:bg-slate-800 transition-colors">
+        <div class="flex items-start gap-3"><span class="text-lg flex-shrink-0">🏷️</span>
+         <div>
+          <p class="font-semibold text-sm">Meta datos</p>
+          <p class="text-xs text-slate-400 mt-0.5">Información estructurada</p>
+         </div>
+        </div></a></li>
+      <li><a href="#section-7" class="nav-link block px-4 py-3 rounded-lg hover:bg-slate-800 transition-colors">
+        <div class="flex items-start gap-3"><span class="text-lg flex-shrink-0">🔑</span>
+         <div>
+          <p class="font-semibold text-sm">Meta keywords</p>
+          <p class="text-xs text-slate-400 mt-0.5">Palabras clave</p>
+         </div>
+        </div></a></li>
+      <li><a href="#section-8" class="nav-link block px-4 py-3 rounded-lg hover:bg-slate-800 transition-colors">
+        <div class="flex items-start gap-3"><span class="text-lg flex-shrink-0">📊</span>
+         <div>
+          <p class="font-semibold text-sm">Resultados y publicidad</p>
+          <p class="text-xs text-slate-400 mt-0.5">Orgánico vs Pagado</p>
+         </div>
+        </div></a></li>
+      <li><a href="#section-9" class="nav-link block px-4 py-3 rounded-lg hover:bg-slate-800 transition-colors">
+        <div class="flex items-start gap-3"><span class="text-lg flex-shrink-0">⛔</span>
+         <div>
+          <p class="font-semibold text-sm">Prácticas penalizadas</p>
+          <p class="text-xs text-slate-400 mt-0.5">Qué evitar</p>
+         </div>
+        </div></a></li>
+      <li><a href="#section-10" class="nav-link block px-4 py-3 rounded-lg hover:bg-slate-800 transition-colors">
+        <div class="flex items-start gap-3"><span class="text-lg flex-shrink-0">📍</span>
+         <div>
+          <p class="font-semibold text-sm">SEO Local</p>
+          <p class="text-xs text-slate-400 mt-0.5">Geolocalización</p>
+         </div>
+        </div></a></li>
+      <li><a href="#section-11" class="nav-link block px-4 py-3 rounded-lg hover:bg-slate-800 transition-colors">
+        <div class="flex items-start gap-3"><span class="text-lg flex-shrink-0">🌐</span>
+         <div>
+          <p class="font-semibold text-sm">Página web</p>
+          <p class="text-xs text-slate-400 mt-0.5">Servidores y Dominios</p>
+         </div>
+        </div></a></li>
+     </ul>
+    </nav>
+   </aside><!-- Main Content -->
+   <main class="flex-1 overflow-y-auto">
+    <div class="max-w-4xl mx-auto p-8 space-y-12"><!-- Section 1: Buenas prácticas generales -->
+     <section id="section-1" class="content-section">
+      <div class="mb-6">
+       <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-100 text-indigo-700 text-sm font-medium mb-3"><span>📋</span> <span>Sección 1</span>
+       </div>
+       <h2 class="font-heading text-4xl font-bold text-slate-800 mb-3">Buenas prácticas generales</h2>
+       <p class="text-lg text-slate-600">Fundamentos esenciales para construir sitios web optimizados</p>
+      </div>
+      <div class="space-y-4">
+       <div class="p-6 rounded-xl bg-white border border-indigo-100 shadow-sm">
+        <div class="flex items-start gap-4"><span class="text-3xl">✦</span>
+         <div>
+          <h3 class="font-bold text-lg text-slate-800 mb-2">Etiquetas HTML correctas</h3>
+          <p class="text-slate-700 leading-relaxed">Utilizar correctamente las distintas etiquetas semánticas como <code class="px-2 py-0.5 bg-slate-100 rounded text-sm">&lt;header&gt;</code>, <code class="px-2 py-0.5 bg-slate-100 rounded text-sm">&lt;main&gt;</code>, <code class="px-2 py-0.5 bg-slate-100 rounded text-sm">&lt;section&gt;</code>, <code class="px-2 py-0.5 bg-slate-100 rounded text-sm">&lt;article&gt;</code>, <code class="px-2 py-0.5 bg-slate-100 rounded text-sm">&lt;nav&gt;</code> y <code class="px-2 py-0.5 bg-slate-100 rounded text-sm">&lt;footer&gt;</code>. Cada etiqueta tiene un propósito específico que ayuda a los motores de búsqueda a entender la estructura y jerarquía del contenido.</p>
+         </div>
+        </div>
+       </div>
+       <div class="p-6 rounded-xl bg-white border border-indigo-100 shadow-sm">
+        <div class="flex items-start gap-4"><span class="text-3xl">📌</span>
+         <div>
+          <h3 class="font-bold text-lg text-slate-800 mb-2">Navbar fijo</h3>
+          <p class="text-slate-700 leading-relaxed">Mantener un navbar fijo facilita la navegación del usuario permitiendo acceso rápido a secciones importantes sin necesidad de hacer scroll hacia arriba. Esto mejora significativamente la experiencia del usuario (UX), un factor que Google considera para el ranking.</p>
+         </div>
+        </div>
+       </div>
+       <div class="p-6 rounded-xl bg-white border border-indigo-100 shadow-sm">
+        <div class="flex items-start gap-4"><span class="text-3xl">🖼️</span>
+         <div>
+          <h3 class="font-bold text-lg text-slate-800 mb-2">Imágenes optimizadas</h3>
+          <p class="text-slate-700 leading-relaxed mb-3">La optimización de imágenes es crucial para la velocidad de carga del sitio. Incluye:</p>
+          <ul class="space-y-2 text-slate-700">
+           <li class="flex items-start gap-2"><span class="text-indigo-600 mt-1">•</span> <span><strong>Compresión:</strong> Reducir el tamaño sin perder calidad visible</span></li>
+           <li class="flex items-start gap-2"><span class="text-indigo-600 mt-1">•</span> <span><strong>Formato adecuado:</strong> WebP para fotos, SVG para gráficos</span></li>
+           <li class="flex items-start gap-2"><span class="text-indigo-600 mt-1">•</span> <span><strong>Lazy loading:</strong> Cargar imágenes solo cuando son necesarias</span></li>
+           <li class="flex items-start gap-2"><span class="text-indigo-600 mt-1">•</span> <span><strong>Dimensiones apropiadas:</strong> Evitar redimensionar con CSS</span></li>
+          </ul>
+         </div>
+        </div>
+       </div>
+       <div class="p-6 rounded-xl bg-white border border-indigo-100 shadow-sm">
+        <div class="flex items-start gap-4"><span class="text-3xl">🏗️</span>
+         <div>
+          <h3 class="font-bold text-lg text-slate-800 mb-2">Estructura clara del sitio</h3>
+          <p class="text-slate-700 leading-relaxed">Una arquitectura de información bien pensada facilita tanto la navegación del usuario como el rastreo por parte de los motores de búsqueda. Debe existir una jerarquía lógica: página principal → categorías → subcategorías → contenido específico. Ninguna página debería estar a más de 3 clics de distancia de la home.</p>
+         </div>
+        </div>
+       </div>
+       <div class="p-6 rounded-xl bg-white border border-indigo-100 shadow-sm">
+        <div class="flex items-start gap-4"><span class="text-3xl">📁</span>
+         <div>
+          <h3 class="font-bold text-lg text-slate-800 mb-2">Repositorio ordenado</h3>
+          <p class="text-slate-700 leading-relaxed">Mantener un repositorio limpio y organizado en GitHub facilita el mantenimiento, la colaboración y el control de versiones. Utiliza carpetas con nombres descriptivos como <code class="px-2 py-0.5 bg-slate-100 rounded text-sm">/assets</code>, <code class="px-2 py-0.5 bg-slate-100 rounded text-sm">/components</code>, <code class="px-2 py-0.5 bg-slate-100 rounded text-sm">/styles</code>, y mantén un README.md actualizado.</p>
+         </div>
+        </div>
+       </div>
+       <div class="p-6 rounded-xl bg-white border border-indigo-100 shadow-sm">
+        <div class="flex items-start gap-4"><span class="text-3xl">🎨</span>
+         <div>
+          <h3 class="font-bold text-lg text-slate-800 mb-2">Imports necesarios en CSS/SASS</h3>
+          <p class="text-slate-700 leading-relaxed">Evitar imports innecesarios reduce el tamaño final de los archivos CSS y mejora los tiempos de carga. Cada import adicional representa una petición HTTP extra y bytes adicionales que el usuario debe descargar. Utiliza herramientas de minificación y elimina código no utilizado.</p>
+         </div>
+        </div>
+       </div>
+       <div class="p-6 rounded-xl bg-white border border-indigo-100 shadow-sm">
+        <div class="flex items-start gap-4"><span class="text-3xl">📝</span>
+         <div>
+          <h3 class="font-bold text-lg text-slate-800 mb-2">Nombres de archivos claros y descriptivos</h3>
+          <p class="text-slate-700 leading-relaxed">Los nombres de archivos deben ser autoexplicativos tanto para desarrolladores como para motores de búsqueda. Por ejemplo: <code class="px-2 py-0.5 bg-slate-100 rounded text-sm">producto-zapatos-deportivos.jpg</code> es mejor que <code class="px-2 py-0.5 bg-slate-100 rounded text-sm">IMG_1234.jpg</code>. Usa guiones (-) en lugar de guiones bajos (_) o espacios.</p>
+         </div>
+        </div>
+       </div>
+       <div class="p-6 rounded-xl bg-white border border-indigo-100 shadow-sm">
+        <div class="flex items-start gap-4"><span class="text-3xl">🚫</span>
+         <div>
+          <h3 class="font-bold text-lg text-slate-800 mb-2">Sin código duplicado</h3>
+          <p class="text-slate-700 leading-relaxed">El código duplicado aumenta el tamaño de los archivos, dificulta el mantenimiento y puede generar inconsistencias. Utiliza componentes reutilizables, funciones auxiliares y aplica el principio DRY (Don't Repeat Yourself). Esto también facilita actualizaciones futuras.</p>
+         </div>
+        </div>
+       </div>
+       <div class="p-6 rounded-xl bg-white border border-indigo-100 shadow-sm">
+        <div class="flex items-start gap-4"><span class="text-3xl">🎨</span>
+         <div>
+          <h3 class="font-bold text-lg text-slate-800 mb-2">Colores consistentes</h3>
+          <p class="text-slate-700 leading-relaxed">Mantener una paleta de colores coherente en todo el sitio mejora la identidad de marca y la experiencia del usuario. Define variables CSS para tus colores principales y úsalas consistentemente. Asegúrate de que haya suficiente contraste para cumplir con los estándares de accesibilidad WCAG.</p>
+         </div>
+        </div>
+       </div>
+       <div class="p-6 rounded-xl bg-gradient-to-br from-indigo-50 to-purple-50 border border-indigo-200 shadow-md">
+        <div class="flex items-start gap-4"><span class="text-3xl">⭐</span>
+         <div>
+          <h3 class="font-bold text-lg text-indigo-900 mb-2">H1 obligatorio (CRÍTICO)</h3>
+          <p class="text-indigo-800 leading-relaxed mb-3"><strong>Regla de oro:</strong> Cada página debe tener exactamente UN elemento H1 que describa claramente el contenido principal. El H1 es el título más importante y le indica a Google de qué trata la página.</p>
+          <div class="mt-3 p-3 bg-white/80 rounded-lg">
+           <p class="text-sm text-indigo-900"><strong>⚠️ Importante:</strong> No uses múltiples H1 en una misma página. La jerarquía debe ser: H1 → H2 → H3 → H4, sin saltar niveles.</p>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </section><!-- Section 2: ¿Qué es SEO? -->
+     <section id="section-2" class="content-section">
+      <div class="mb-6">
+       <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-100 text-purple-700 text-sm font-medium mb-3"><span>🔍</span> <span>Sección 2</span>
+       </div>
+       <h2 class="font-heading text-4xl font-bold text-slate-800 mb-3">¿Qué es SEO?</h2>
+       <p class="text-lg text-slate-600">Search Engine Optimization - Optimización para motores de búsqueda</p>
+      </div>
+      <div class="space-y-6">
+       <div class="p-8 rounded-xl bg-gradient-to-br from-purple-50 to-pink-50 border border-purple-200 shadow-sm">
+        <h3 class="font-heading text-2xl font-bold text-purple-900 mb-4">Definición</h3>
+        <p class="text-slate-800 text-lg leading-relaxed mb-4">SEO (Search Engine Optimization) es el conjunto de técnicas, estrategias y buenas prácticas diseñadas para mejorar la visibilidad y el posicionamiento de un sitio web en los resultados orgánicos (no pagados) de los motores de búsqueda como Google, Bing y otros.</p>
+        <p class="text-slate-700 leading-relaxed">El objetivo principal es atraer tráfico cualificado y relevante hacia tu sitio web, aumentando así las posibilidades de conversión, ya sea una venta, registro, descarga o cualquier otra acción valiosa para tu negocio.</p>
+       </div>
+       <div class="p-6 rounded-xl bg-amber-50 border border-amber-300">
+        <div class="flex items-start gap-3"><span class="text-2xl">💡</span>
+         <div>
+          <p class="font-bold text-amber-900 mb-2">Concepto clave</p>
+          <p class="text-amber-900">SEO no es una sola "cosa" o técnica aislada. Es un ecosistema completo que se divide en distintas áreas especializadas, cada una con sus propias estrategias y mejores prácticas:</p>
+         </div>
+        </div>
+       </div>
+       <div class="grid md:grid-cols-2 gap-6">
+        <div class="p-6 rounded-xl bg-white border-2 border-indigo-200 shadow-sm">
+         <div class="flex items-center gap-3 mb-4"><span class="text-4xl">📄</span>
+          <h3 class="font-bold text-xl text-indigo-900">SEO On Page</h3>
+         </div>
+         <p class="text-slate-700 leading-relaxed mb-3">Se enfoca en optimizar todos los elementos internos y visibles de tu sitio web.</p>
+         <ul class="space-y-2 text-sm text-slate-600">
+          <li class="flex items-start gap-2"><span class="text-indigo-500">•</span> <span>Contenido de calidad y relevante</span></li>
+          <li class="flex items-start gap-2"><span class="text-indigo-500">•</span> <span>Palabras clave estratégicas</span></li>
+          <li class="flex items-start gap-2"><span class="text-indigo-500">•</span> <span>Meta tags y estructura HTML</span></li>
+          <li class="flex items-start gap-2"><span class="text-indigo-500">•</span> <span>Optimización de imágenes</span></li>
+         </ul>
+        </div>
+        <div class="p-6 rounded-xl bg-white border-2 border-purple-200 shadow-sm">
+         <div class="flex items-center gap-3 mb-4"><span class="text-4xl">🌐</span>
+          <h3 class="font-bold text-xl text-purple-900">SEO Off Page</h3>
+         </div>
+         <p class="text-slate-700 leading-relaxed mb-3">Abarca todas las acciones realizadas fuera de tu sitio para mejorar su autoridad y reputación.</p>
+         <ul class="space-y-2 text-sm text-slate-600">
+          <li class="flex items-start gap-2"><span class="text-purple-500">•</span> <span>Link building (backlinks de calidad)</span></li>
+          <li class="flex items-start gap-2"><span class="text-purple-500">•</span> <span>Presencia en redes sociales</span></li>
+          <li class="flex items-start gap-2"><span class="text-purple-500">•</span> <span>Menciones de marca</span></li>
+          <li class="flex items-start gap-2"><span class="text-purple-500">•</span> <span>Guest posting y colaboraciones</span></li>
+         </ul>
+        </div>
+        <div class="p-6 rounded-xl bg-white border-2 border-pink-200 shadow-sm">
+         <div class="flex items-center gap-3 mb-4"><span class="text-4xl">⚙️</span>
+          <h3 class="font-bold text-xl text-pink-900">SEO Técnico</h3>
+         </div>
+         <p class="text-slate-700 leading-relaxed mb-3">Se centra en la infraestructura y funcionamiento técnico del sitio web.</p>
+         <ul class="space-y-2 text-sm text-slate-600">
+          <li class="flex items-start gap-2"><span class="text-pink-500">•</span> <span>Velocidad de carga optimizada</span></li>
+          <li class="flex items-start gap-2"><span class="text-pink-500">•</span> <span>Sitemap XML y robots.txt</span></li>
+          <li class="flex items-start gap-2"><span class="text-pink-500">•</span> <span>Estructura de URLs amigables</span></li>
+          <li class="flex items-start gap-2"><span class="text-pink-500">•</span> <span>HTTPS y certificado SSL</span></li>
+          <li class="flex items-start gap-2"><span class="text-pink-500">•</span> <span>Mobile-friendly y responsive</span></li>
+         </ul>
+        </div>
+        <div class="p-6 rounded-xl bg-white border-2 border-rose-200 shadow-sm">
+         <div class="flex items-center gap-3 mb-4"><span class="text-4xl">📍</span>
+          <h3 class="font-bold text-xl text-rose-900">SEO Local</h3>
+         </div>
+         <p class="text-slate-700 leading-relaxed mb-3">Optimización específica para negocios con ubicación física o que sirven áreas geográficas específicas.</p>
+         <ul class="space-y-2 text-sm text-slate-600">
+          <li class="flex items-start gap-2"><span class="text-rose-500">•</span> <span>Google My Business optimizado</span></li>
+          <li class="flex items-start gap-2"><span class="text-rose-500">•</span> <span>Reseñas y valoraciones</span></li>
+          <li class="flex items-start gap-2"><span class="text-rose-500">•</span> <span>Información NAP consistente</span></li>
+          <li class="flex items-start gap-2"><span class="text-rose-500">•</span> <span>Contenido geo-localizado</span></li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </section><!-- Section 3: SEO On Page -->
+     <section id="section-3" class="content-section">
+      <div class="mb-6">
+       <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-sm font-medium mb-3"><span>📄</span> <span>Sección 3</span>
+       </div>
+       <h2 class="font-heading text-4xl font-bold text-slate-800 mb-3">SEO On Page</h2>
+       <p class="text-lg text-slate-600">Optimización del contenido interno y elementos visibles del sitio</p>
+      </div>
+      <div class="space-y-4">
+       <div class="p-6 rounded-xl bg-white border border-blue-100 shadow-sm">
+        <div class="flex items-start gap-4"><span class="text-3xl">🔑</span>
+         <div>
+          <h3 class="font-bold text-lg text-slate-800 mb-2">Palabras clave (Keywords)</h3>
+          <p class="text-slate-700 leading-relaxed mb-3">Las palabras clave son los términos que los usuarios escriben en los buscadores. Debes:</p>
+          <ul class="space-y-2 text-slate-700">
+           <li class="flex items-start gap-2"><span class="text-blue-600">•</span> <span><strong>Investigar:</strong> Usar herramientas como Google Keyword Planner, Ahrefs o SEMrush</span></li>
+           <li class="flex items-start gap-2"><span class="text-blue-600">•</span> <span><strong>Ubicar estratégicamente:</strong> En títulos, primer párrafo, subtítulos y de forma natural en el contenido</span></li>
+           <li class="flex items-start gap-2"><span class="text-blue-600">•</span> <span><strong>Long-tail keywords:</strong> Frases más específicas con menor competencia pero mayor intención de compra</span></li>
+           <li class="flex items-start gap-2"><span class="text-blue-600">•</span> <span><strong>Densidad natural:</strong> Evitar keyword stuffing (saturación de palabras clave)</span></li>
+          </ul>
+         </div>
+        </div>
+       </div>
+       <div class="p-6 rounded-xl bg-white border border-blue-100 shadow-sm">
+        <div class="flex items-start gap-4"><span class="text-3xl">🏷️</span>
+         <div>
+          <h3 class="font-bold text-lg text-slate-800 mb-2">Meta tags</h3>
+          <p class="text-slate-700 leading-relaxed mb-3">Elementos HTML que proporcionan información sobre la página:</p>
+          <div class="space-y-3">
+           <div class="p-3 bg-slate-50 rounded-lg">
+            <p class="text-sm font-semibold text-slate-800 mb-1">Title Tag (Título)</p>
+            <p class="text-sm text-slate-600 mb-2">Aparece en la pestaña del navegador y en los resultados de búsqueda. Máximo 60 caracteres.</p><code class="text-xs bg-slate-800 text-slate-100 p-2 rounded block overflow-x-auto">&lt;title&gt;Guía Completa de SEO 2024 | Tu Marca&lt;/title&gt;</code>
+           </div>
+           <div class="p-3 bg-slate-50 rounded-lg">
+            <p class="text-sm font-semibold text-slate-800 mb-1">Meta Description</p>
+            <p class="text-sm text-slate-600 mb-2">Resumen que aparece bajo el título en Google. Máximo 155 caracteres.</p><code class="text-xs bg-slate-800 text-slate-100 p-2 rounded block overflow-x-auto">&lt;meta name="description" content="Aprende SEO desde cero..."&gt;</code>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="p-6 rounded-xl bg-white border border-blue-100 shadow-sm">
+        <div class="flex items-start gap-4"><span class="text-3xl">🖼️</span>
+         <div>
+          <h3 class="font-bold text-lg text-slate-800 mb-2">Optimización de imágenes</h3>
+          <p class="text-slate-700 leading-relaxed mb-3">Las imágenes bien optimizadas mejoran tanto la velocidad como el SEO:</p>
+          <ul class="space-y-2 text-slate-700">
+           <li class="flex items-start gap-2"><span class="text-blue-600">•</span> <span><strong>Tamaño reducido:</strong> Comprimir sin perder calidad (TinyPNG, ImageOptim)</span></li>
+           <li class="flex items-start gap-2"><span class="text-blue-600">•</span> <span><strong>Nombres descriptivos:</strong> "zapatos-deportivos-nike.jpg" vs "IMG001.jpg"</span></li>
+           <li class="flex items-start gap-2"><span class="text-blue-600">•</span> <span><strong>Formato moderno:</strong> WebP ofrece mejor compresión que JPG/PNG</span></li>
+           <li class="flex items-start gap-2"><span class="text-blue-600">•</span> <span><strong>Dimensiones correctas:</strong> Subir en el tamaño exacto que se mostrará</span></li>
+          </ul>
+         </div>
+        </div>
+       </div>
+       <div class="p-6 rounded-xl bg-white border border-blue-100 shadow-sm">
+        <div class="flex items-start gap-4"><span class="text-3xl">📝</span>
+         <div>
+          <h3 class="font-bold text-lg text-slate-800 mb-2">Atributo ALT en imágenes</h3>
+          <p class="text-slate-700 leading-relaxed mb-3">El atributo ALT describe el contenido de una imagen y es crucial para:</p>
+          <ul class="space-y-2 text-slate-700 mb-3">
+           <li class="flex items-start gap-2"><span class="text-blue-600">•</span> <span><strong>Accesibilidad:</strong> Lectores de pantalla para personas con discapacidad visual</span></li>
+           <li class="flex items-start gap-2"><span class="text-blue-600">•</span> <span><strong>SEO:</strong> Google lee el ALT text para entender el contenido de la imagen</span></li>
+           <li class="flex items-start gap-2"><span class="text-blue-600">•</span> <span><strong>Respaldo:</strong> Se muestra si la imagen no puede cargarse</span></li>
+          </ul>
+          <div class="p-3 bg-slate-50 rounded-lg"><code class="text-xs bg-slate-800 text-slate-100 p-2 rounded block overflow-x-auto">&lt;img src="cafe.jpg" alt="Taza de café latte con arte en espuma"&gt;</code>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="p-6 rounded-xl bg-white border border-blue-100 shadow-sm">
+        <div class="flex items-start gap-4"><span class="text-3xl">🏗️</span>
+         <div>
+          <h3 class="font-bold text-lg text-slate-800 mb-2">HTML semántico</h3>
+          <p class="text-slate-700 leading-relaxed mb-3">Usar las etiquetas HTML correctas según su propósito semántico ayuda a los motores de búsqueda a entender mejor tu contenido:</p>
+          <div class="grid gap-2">
+           <div class="flex items-start gap-2 text-sm"><code class="px-2 py-1 bg-blue-100 text-blue-800 rounded">&lt;header&gt;</code> <span class="text-slate-600">Encabezado de la página o sección</span>
+           </div>
+           <div class="flex items-start gap-2 text-sm"><code class="px-2 py-1 bg-blue-100 text-blue-800 rounded">&lt;nav&gt;</code> <span class="text-slate-600">Navegación principal</span>
+           </div>
+           <div class="flex items-start gap-2 text-sm"><code class="px-2 py-1 bg-blue-100 text-blue-800 rounded">&lt;main&gt;</code> <span class="text-slate-600">Contenido principal único de la página</span>
+           </div>
+           <div class="flex items-start gap-2 text-sm"><code class="px-2 py-1 bg-blue-100 text-blue-800 rounded">&lt;article&gt;</code> <span class="text-slate-600">Contenido independiente (blog post, noticia)</span>
+           </div>
+           <div class="flex items-start gap-2 text-sm"><code class="px-2 py-1 bg-blue-100 text-blue-800 rounded">&lt;section&gt;</code> <span class="text-slate-600">Sección temática del contenido</span>
+           </div>
+           <div class="flex items-start gap-2 text-sm"><code class="px-2 py-1 bg-blue-100 text-blue-800 rounded">&lt;aside&gt;</code> <span class="text-slate-600">Contenido relacionado o complementario</span>
+           </div>
+           <div class="flex items-start gap-2 text-sm"><code class="px-2 py-1 bg-blue-100 text-blue-800 rounded">&lt;footer&gt;</code> <span class="text-slate-600">Pie de página con información secundaria</span>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="p-6 rounded-xl bg-white border border-blue-100 shadow-sm">
+        <div class="flex items-start gap-4"><span class="text-3xl">📊</span>
+         <div>
+          <h3 class="font-bold text-lg text-slate-800 mb-2">Jerarquía de encabezados</h3>
+          <p class="text-slate-700 leading-relaxed mb-3">La estructura correcta de encabezados es fundamental para SEO:</p>
+          <div class="space-y-3 mb-3">
+           <div class="p-3 bg-blue-50 rounded-lg border-l-4 border-blue-500">
+            <p class="font-bold text-blue-900">H1 - Título principal</p>
+            <p class="text-sm text-blue-800">Solo UNO por página. Define el tema principal.</p>
+           </div>
+           <div class="pl-4">
+            <div class="p-3 bg-blue-50/70 rounded-lg border-l-4 border-blue-400">
+             <p class="font-bold text-blue-800">H2 - Subtemas principales</p>
+             <p class="text-sm text-blue-700">Divide el contenido en secciones importantes.</p>
+            </div>
+            <div class="pl-4 mt-2">
+             <div class="p-3 bg-blue-50/50 rounded-lg border-l-4 border-blue-300">
+              <p class="font-bold text-blue-700">H3 - Subsecciones</p>
+              <p class="text-sm text-blue-600">Detalles dentro de cada H2.</p>
+             </div>
+             <div class="pl-4 mt-2">
+              <div class="p-2 bg-blue-50/30 rounded border-l-4 border-blue-200">
+               <p class="text-sm font-bold text-blue-600">H4, H5, H6</p>
+               <p class="text-xs text-blue-500">Para subdivisiones más específicas.</p>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="p-3 bg-red-50 rounded-lg border border-red-200">
+           <p class="text-sm text-red-800"><strong>❌ Error común:</strong> Saltar de H1 directamente a H3, o usar H2 antes que H1. La jerarquía debe ser siempre secuencial.</p>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </section><!-- Section 4: SEO Off Page -->
+     <section id="section-4" class="content-section">
+      <div class="mb-6">
+       <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-100 text-emerald-700 text-sm font-medium mb-3"><span>🌐</span> <span>Sección 4</span>
+       </div>
+       <h2 class="font-heading text-4xl font-bold text-slate-800 mb-3">SEO Off Page</h2>
+       <p class="text-lg text-slate-600">Construcción de autoridad y reputación fuera de tu sitio</p>
+      </div>
+      <div class="space-y-6">
+       <div class="p-6 rounded-xl bg-emerald-50 border border-emerald-200">
+        <div class="flex items-start gap-3 mb-4"><span class="text-2xl">🔍</span>
+         <p class="text-emerald-900 leading-relaxed"><strong>Concepto fundamental:</strong> Google no solo analiza que el contenido de tu sitio esté bien hecho y optimizado. También evalúa qué tan <strong>relevante, confiable y autorizado</strong> es tu sitio en internet. El SEO Off Page construye esta reputación externa.</p>
+        </div>
+       </div>
+       <div class="space-y-4">
+        <div class="p-6 rounded-xl bg-white border border-emerald-100 shadow-sm">
+         <div class="flex items-start gap-4"><span class="text-3xl">🔗</span>
+          <div>
+           <h3 class="font-bold text-lg text-slate-800 mb-2">Backlinks (Enlaces entrantes)</h3>
+           <p class="text-slate-700 leading-relaxed mb-3">Los backlinks son enlaces desde otros sitios web hacia el tuyo. Son uno de los factores de ranking más importantes:</p>
+           <ul class="space-y-2 text-slate-700 mb-3">
+            <li class="flex items-start gap-2"><span class="text-emerald-600">✓</span> <span><strong>Calidad sobre cantidad:</strong> Un enlace desde un sitio autorizado vale más que 100 de sitios irrelevantes</span></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600">✓</span> <span><strong>Relevancia temática:</strong> Enlaces desde sitios relacionados con tu industria tienen más peso</span></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600">✓</span> <span><strong>Anchor text natural:</strong> El texto del enlace debe ser descriptivo y variado</span></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600">✓</span> <span><strong>Diversidad:</strong> Enlaces desde diferentes dominios y tipos de sitios</span></li>
+           </ul>
+           <div class="p-3 bg-amber-50 rounded-lg border border-amber-200">
+            <p class="text-sm text-amber-900"><strong>⚠️ Advertencia:</strong> NUNCA compres backlinks. Google penaliza esta práctica severamente.</p>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="p-6 rounded-xl bg-white border border-emerald-100 shadow-sm">
+         <div class="flex items-start gap-4"><span class="text-3xl">📱</span>
+          <div>
+           <h3 class="font-bold text-lg text-slate-800 mb-2">Presencia en redes sociales</h3>
+           <p class="text-slate-700 leading-relaxed mb-3">Aunque las señales sociales no son un factor de ranking directo, una presencia activa en redes sociales:</p>
+           <ul class="space-y-2 text-slate-700">
+            <li class="flex items-start gap-2"><span class="text-emerald-600">•</span> <span>Aumenta la visibilidad de tu marca y contenido</span></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600">•</span> <span>Genera tráfico referido hacia tu sitio</span></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600">•</span> <span>Facilita que otros descubran y enlacen tu contenido</span></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600">•</span> <span>Construye comunidad y engagement con tu audiencia</span></li>
+           </ul>
+          </div>
+         </div>
+        </div>
+        <div class="p-6 rounded-xl bg-white border border-emerald-100 shadow-sm">
+         <div class="flex items-start gap-4"><span class="text-3xl">📢</span>
+          <div>
+           <h3 class="font-bold text-lg text-slate-800 mb-2">Menciones de marca</h3>
+           <p class="text-slate-700 leading-relaxed mb-3">Cuando otros sitios mencionan tu marca o producto (incluso sin enlazar), Google lo considera una señal de relevancia y autoridad. Esto incluye:</p>
+           <ul class="space-y-2 text-slate-700">
+            <li class="flex items-start gap-2"><span class="text-emerald-600">•</span> <span>Reseñas en blogs de tu industria</span></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600">•</span> <span>Menciones en medios de comunicación y prensa digital</span></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600">•</span> <span>Comentarios en foros y comunidades especializadas</span></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600">•</span> <span>Referencias en estudios, investigaciones o casos de éxito</span></li>
+           </ul>
+          </div>
+         </div>
+        </div>
+        <div class="p-6 rounded-xl bg-white border border-emerald-100 shadow-sm">
+         <div class="flex items-start gap-4"><span class="text-3xl">🤝</span>
+          <div>
+           <h3 class="font-bold text-lg text-slate-800 mb-2">Colaboraciones estratégicas</h3>
+           <p class="text-slate-700 leading-relaxed mb-3">Trabajar con otros sitios, marcas o creadores de contenido puede amplificar tu alcance:</p>
+           <ul class="space-y-2 text-slate-700">
+            <li class="flex items-start gap-2"><span class="text-emerald-600">•</span> <span><strong>Co-marketing:</strong> Webinars, ebooks o estudios conjuntos</span></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600">•</span> <span><strong>Entrevistas:</strong> Aparecer como experto en podcasts o blogs</span></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600">•</span> <span><strong>Partnerships:</strong> Alianzas con marcas complementarias</span></li>
+           </ul>
+          </div>
+         </div>
+        </div>
+        <div class="p-6 rounded-xl bg-white border border-emerald-100 shadow-sm">
+         <div class="flex items-start gap-4"><span class="text-3xl">📤</span>
+          <div>
+           <h3 class="font-bold text-lg text-slate-800 mb-2">Guest Posting (Publicación como invitado)</h3>
+           <p class="text-slate-700 leading-relaxed mb-3">Escribir artículos de calidad para otros blogs o publicaciones de tu industria te permite:</p>
+           <ul class="space-y-2 text-slate-700 mb-3">
+            <li class="flex items-start gap-2"><span class="text-emerald-600">•</span> <span>Conseguir backlinks desde sitios relevantes y autorizados</span></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600">•</span> <span>Posicionarte como experto en tu campo</span></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600">•</span> <span>Alcanzar nuevas audiencias potencialmente interesadas</span></li>
+            <li class="flex items-start gap-2"><span class="text-emerald-600">•</span> <span>Construir relaciones valiosas en tu industria</span></li>
+           </ul>
+           <div class="p-3 bg-blue-50 rounded-lg border border-blue-200">
+            <p class="text-sm text-blue-900"><strong>💡 Tip:</strong> Enfócate en calidad, no cantidad. Un artículo excelente en un sitio muy visitado vale mucho más que múltiples artículos mediocres en sitios pequeños.</p>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </section><!-- Section 5: SEO Técnico -->
+     <section id="section-5" class="content-section">
+      <div class="mb-6">
+       <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-100 text-orange-700 text-sm font-medium mb-3"><span>⚙️</span> <span>Sección 5</span>
+       </div>
+       <h2 class="font-heading text-4xl font-bold text-slate-800 mb-3">SEO Técnico</h2>
+       <p class="text-lg text-slate-600">Optimización de la infraestructura y funcionamiento del sitio</p>
+      </div>
+      <div class="space-y-6">
+       <div class="p-6 rounded-xl bg-amber-50 border border-amber-200 mb-4">
+        <div class="flex items-start gap-3"><span class="text-2xl">🔄</span>
+         <p class="text-amber-900"><strong>Nota importante:</strong> El SEO técnico está directamente relacionado con el SEO On Page, pero se enfoca específicamente en cómo los motores de búsqueda pueden acceder, rastrear, interpretar e indexar tu sitio.</p>
+        </div>
+       </div>
+       <div class="space-y-4">
+        <div class="p-6 rounded-xl bg-white border border-orange-100 shadow-sm">
+         <div class="flex items-start gap-4"><span class="text-3xl">⚡</span>
+          <div>
+           <h3 class="font-bold text-lg text-slate-800 mb-2">Velocidad de carga (Core Web Vitals)</h3>
+           <p class="text-slate-700 leading-relaxed mb-3">La velocidad es un factor de ranking crucial. Google mide específicamente:</p>
+           <ul class="space-y-2 text-slate-700 mb-3">
+            <li class="flex items-start gap-2"><span class="text-orange-600">•</span> <span><strong>LCP (Largest Contentful Paint):</strong> Tiempo hasta que se carga el contenido principal (debe ser &lt; 2.5s)</span></li>
+            <li class="flex items-start gap-2"><span class="text-orange-600">•</span> <span><strong>FID (First Input Delay):</strong> Tiempo de respuesta a la primera interacción (debe ser &lt; 100ms)</span></li>
+            <li class="flex items-start gap-2"><span class="text-orange-600">•</span> <span><strong>CLS (Cumulative Layout Shift):</strong> Estabilidad visual durante la carga (debe ser &lt; 0.1)</span></li>
+           </ul>
+           <p class="text-slate-700 text-sm"><strong>Cómo mejorar:</strong> Comprimir imágenes, minimizar CSS/JS, usar CDN, habilitar caché del navegador, lazy loading.</p>
+          </div>
+         </div>
+        </div>
+        <div class="p-6 rounded-xl bg-white border border-orange-100 shadow-sm">
+         <div class="flex items-start gap-4"><span class="text-3xl">🖼️</span>
+          <div>
+           <h3 class="font-bold text-lg text-slate-800 mb-2">Optimización de imágenes y recursos</h3>
+           <p class="text-slate-700 leading-relaxed mb-3">Los archivos multimedia mal optimizados son la causa #1 de sitios lentos:</p>
+           <ul class="space-y-2 text-slate-700">
+            <li class="flex items-start gap-2"><span class="text-orange-600">•</span> <span><strong>Formatos modernos:</strong> WebP (70% más ligero que JPG), AVIF para máxima compresión</span></li>
+            <li class="flex items-start gap-2"><span class="text-orange-600">•</span> <span><strong>Responsive images:</strong> Servir diferentes tamaños según el dispositivo</span></li>
+            <li class="flex items-start gap-2"><span class="text-orange-600">•</span> <span><strong>Lazy loading:</strong> Cargar imágenes solo cuando el usuario se acerca a ellas</span></li>
+            <li class="flex items-start gap-2"><span class="text-orange-600">•</span> <span><strong>CDN:</strong> Servir recursos desde servidores cercanos geográficamente</span></li>
+           </ul>
+          </div>
+         </div>
+        </div>
+        <div class="p-6 rounded-xl bg-white border border-orange-100 shadow-sm">
+         <div class="flex items-start gap-4"><span class="text-3xl">🏗️</span>
+          <div>
+           <h3 class="font-bold text-lg text-slate-800 mb-2">Estructura del sitio y arquitectura</h3>
+           <p class="text-slate-700 leading-relaxed mb-3">Una arquitectura web bien planificada facilita tanto la navegación del usuario como el rastreo de los bots:</p>
+           <ul class="space-y-2 text-slate-700 mb-3">
+            <li class="flex items-start gap-2"><span class="text-orange-600">•</span> <span><strong>Estructura piramidal:</strong> Home → Categorías → Subcategorías → Páginas finales</span></li>
+            <li class="flex items-start gap-2"><span class="text-orange-600">•</span> <span><strong>Regla de 3 clics:</strong> Cualquier página debe ser accesible en máximo 3 clics desde home</span></li>
+            <li class="flex items-start gap-2"><span class="text-orange-600">•</span> <span><strong>URLs amigables:</strong> /productos/zapatillas-running/ en lugar de /p?id=12345</span></li>
+            <li class="flex items-start gap-2"><span class="text-orange-600">•</span> <span><strong>Enlaces internos:</strong> Conectar páginas relacionadas para distribuir autoridad</span></li>
+           </ul>
+           <div class="p-3 bg-slate-50 rounded-lg">
+            <p class="text-sm text-slate-700"><strong>Ejemplo de buena estructura:</strong></p><code class="text-xs block mt-2 text-slate-600"> Home /<br>
+              ├── Blog /<br>
+              │ ├── SEO /<br>
+              │ │ └── guia-seo-2024/<br>
+              ├── Productos /<br>
+              │ ├── Zapatillas /<br>
+              │ │ └── running-profesional/ </code>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="p-6 rounded-xl bg-white border border-orange-100 shadow-sm">
+         <div class="flex items-start gap-4"><span class="text-3xl">🤖</span>
+          <div>
+           <h3 class="font-bold text-lg text-slate-800 mb-2">Facilitar el trabajo de los motores de búsqueda</h3>
+           <p class="text-slate-700 leading-relaxed mb-3">Herramientas y archivos que ayudan a los bots a rastrear e indexar tu sitio:</p>
+           <div class="space-y-3">
+            <div class="p-3 bg-slate-50 rounded-lg">
+             <p class="font-semibold text-slate-800 mb-1">Sitemap XML</p>
+             <p class="text-sm text-slate-700">Archivo que lista todas las URLs importantes de tu sitio, con metadatos como fecha de modificación y prioridad. Facilita que Google descubra todas tus páginas.</p><code class="text-xs text-slate-600 block mt-1">Ubicación: /sitemap.xml</code>
+            </div>
+            <div class="p-3 bg-slate-50 rounded-lg">
+             <p class="font-semibold text-slate-800 mb-1">Robots.txt</p>
+             <p class="text-sm text-slate-700">Archivo que indica a los bots qué páginas pueden o no rastrear. Útil para excluir áreas administrativas o contenido duplicado.</p><code class="text-xs text-slate-600 block mt-1">Ubicación: /robots.txt</code>
+            </div>
+            <div class="p-3 bg-slate-50 rounded-lg">
+             <p class="font-semibold text-slate-800 mb-1">Datos estructurados (Schema.org)</p>
+             <p class="text-sm text-slate-700">Código JSON-LD que ayuda a Google a entender el contenido específico: productos, recetas, eventos, reseñas, etc. Permite rich snippets en resultados.</p>
+            </div>
+            <div class="p-3 bg-slate-50 rounded-lg">
+             <p class="font-semibold text-slate-800 mb-1">HTTPS y SSL</p>
+             <p class="text-sm text-slate-700">Certificado de seguridad obligatorio. Google prioriza sitios seguros y los navegadores marcan sitios HTTP como "No seguro".</p>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="p-6 rounded-xl bg-white border border-orange-100 shadow-sm">
+         <div class="flex items-start gap-4"><span class="text-3xl">📱</span>
+          <div>
+           <h3 class="font-bold text-lg text-slate-800 mb-2">Mobile-First y Responsive Design</h3>
+           <p class="text-slate-700 leading-relaxed mb-3">Desde 2019, Google usa el índice "mobile-first", lo que significa que evalúa principalmente la versión móvil de tu sitio:</p>
+           <ul class="space-y-2 text-slate-700">
+            <li class="flex items-start gap-2"><span class="text-orange-600">•</span> <span><strong>Diseño responsivo:</strong> El sitio debe adaptarse perfectamente a todos los tamaños de pantalla</span></li>
+            <li class="flex items-start gap-2"><span class="text-orange-600">•</span> <span><strong>Botones táctiles:</strong> Elementos interactivos de tamaño apropiado (mínimo 48x48px)</span></li>
+            <li class="flex items-start gap-2"><span class="text-orange-600">•</span> <span><strong>Texto legible:</strong> Sin necesidad de zoom (mínimo 16px en móvil)</span></li>
+            <li class="flex items-start gap-2"><span class="text-orange-600">•</span> <span><strong>Velocidad móvil:</strong> Especialmente crítica en conexiones lentas</span></li>
+           </ul>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </section><!-- Section 6: Meta datos -->
+     <section id="section-6" class="content-section">
+      <div class="mb-6">
+       <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-violet-100 text-violet-700 text-sm font-medium mb-3"><span>🏷️</span> <span>Sección 6</span>
+       </div>
+       <h2 class="font-heading text-4xl font-bold text-slate-800 mb-3">Meta datos</h2>
+       <p class="text-lg text-slate-600">Información estructurada dentro del &lt;head&gt; del documento HTML</p>
+      </div>
+      <div class="space-y-6">
+       <div class="p-6 rounded-xl bg-violet-50 border border-violet-200">
+        <h3 class="font-bold text-violet-900 mb-3 text-lg">¿Qué son los meta datos?</h3>
+        <p class="text-slate-800 leading-relaxed mb-3">Los meta datos son fragmentos de información que se colocan en el <code class="px-2 py-0.5 bg-white rounded text-sm">&lt;head&gt;</code> de tu documento HTML y que <strong>no son visibles directamente</strong> para los visitantes del sitio, pero sí son leídos por los motores de búsqueda y otros sistemas.</p>
+       </div>
+       <div class="p-6 rounded-xl bg-white border border-violet-100 shadow-sm">
+        <h3 class="font-bold text-lg text-slate-800 mb-3">Sirven para:</h3>
+        <ul class="space-y-2 text-slate-700">
+         <li class="flex items-start gap-3"><span class="text-violet-600 text-xl">✓</span> <span><strong>Definir información adicional del sitio:</strong> Título, descripción, autor, idioma, palabras clave, etc.</span></li>
+         <li class="flex items-start gap-3"><span class="text-violet-600 text-xl">✓</span> <span><strong>Proporcionar contexto y estructura:</strong> Ayudan a organizar y categorizar el contenido para su mejor interpretación.</span></li>
+         <li class="flex items-start gap-3"><span class="text-violet-600 text-xl">✓</span> <span><strong>Indicar a los buscadores de qué trata la página:</strong> Los meta datos son una de las primeras cosas que Google lee al visitar tu página.</span></li>
+         <li class="flex items-start gap-3"><span class="text-violet-600 text-xl">✓</span> <span><strong>Controlar cómo aparece tu sitio:</strong> En resultados de búsqueda, redes sociales (Open Graph, Twitter Cards), etc.</span></li>
+        </ul>
+       </div>
+       <div class="p-6 rounded-xl bg-white border border-fuchsia-100 shadow-sm">
+        <h3 class="font-bold text-lg text-slate-800 mb-3">Son importantes porque:</h3>
+        <ul class="space-y-2 text-slate-700">
+         <li class="flex items-start gap-3"><span class="text-fuchsia-600 text-xl">★</span> <span><strong>Facilitan la lectura a los buscadores:</strong> Los bots de Google leen los meta datos para entender rápidamente el contenido y relevancia de tu página.</span></li>
+         <li class="flex items-start gap-3"><span class="text-fuchsia-600 text-xl">★</span> <span><strong>Mejoran la indexación:</strong> Bien implementados, aceleran el proceso de indexación y ayudan a posicionar mejor en palabras clave específicas.</span></li>
+         <li class="flex items-start gap-3"><span class="text-fuchsia-600 text-xl">★</span> <span><strong>Ayudan a detallar el contenido:</strong> Permiten especificar información que no está explícita en el contenido visible (fechas, categorías, autores, etc.)</span></li>
+         <li class="flex items-start gap-3"><span class="text-fuchsia-600 text-xl">★</span> <span><strong>Mejoran el CTR:</strong> Un título y descripción atractivos en los resultados de búsqueda aumentan los clics.</span></li>
+        </ul>
+       </div>
+       <div class="p-6 rounded-xl bg-slate-800 text-slate-100">
+        <div class="flex items-start gap-3 mb-3"><span class="text-2xl">💡</span>
+         <div>
+          <h3 class="font-bold text-lg text-white mb-2">Concepto: Indexación</h3>
+          <p class="text-slate-200 leading-relaxed">Es el proceso mediante el cual Google (y otros motores de búsqueda) <strong>descubren, analizan, almacenan y organizan</strong> las páginas web en su base de datos masiva. Cuando tu sitio está indexado, puede aparecer en los resultados de búsqueda.</p>
+         </div>
+        </div>
+        <div class="mt-4 p-4 bg-slate-700/50 rounded-lg">
+         <p class="text-sm text-slate-300 mb-2"><strong>Fases de la indexación:</strong></p>
+         <ol class="space-y-1 text-sm text-slate-300 ml-4">
+          <li><strong>1. Rastreo (Crawling):</strong> Los bots visitan y leen tu sitio</li>
+          <li><strong>2. Procesamiento:</strong> Analizan el contenido, estructura y meta datos</li>
+          <li><strong>3. Almacenamiento:</strong> Guardan la información en el índice de Google</li>
+          <li><strong>4. Ranking:</strong> Determinan en qué posición mostrar tu página para cada búsqueda</li>
+         </ol>
+        </div>
+       </div>
+       <div class="p-6 rounded-xl bg-blue-50 border border-blue-200">
+        <h3 class="font-bold text-blue-900 mb-3">Meta datos más comunes:</h3>
+        <div class="space-y-3">
+         <div class="p-3 bg-white rounded-lg"><code class="text-sm text-blue-800 font-mono">&lt;meta charset="UTF-8"&gt;</code>
+          <p class="text-sm text-slate-600 mt-1">Define la codificación de caracteres</p>
+         </div>
+         <div class="p-3 bg-white rounded-lg"><code class="text-sm text-blue-800 font-mono">&lt;meta name="viewport" content="width=device-width"&gt;</code>
+          <p class="text-sm text-slate-600 mt-1">Configuración para diseño responsive</p>
+         </div>
+         <div class="p-3 bg-white rounded-lg"><code class="text-sm text-blue-800 font-mono">&lt;meta name="description" content="..."&gt;</code>
+          <p class="text-sm text-slate-600 mt-1">Descripción que aparece en resultados de búsqueda</p>
+         </div>
+         <div class="p-3 bg-white rounded-lg"><code class="text-sm text-blue-800 font-mono">&lt;meta name="keywords" content="..."&gt;</code>
+          <p class="text-sm text-slate-600 mt-1">Palabras clave relacionadas con el contenido</p>
+         </div>
+         <div class="p-3 bg-white rounded-lg"><code class="text-sm text-blue-800 font-mono">&lt;meta name="robots" content="index, follow"&gt;</code>
+          <p class="text-sm text-slate-600 mt-1">Instrucciones para los bots de búsqueda</p>
+         </div>
+        </div>
+       </div>
+      </div>
+     </section><!-- Section 7: Meta keywords -->
+     <section id="section-7" class="content-section">
+      <div class="mb-6">
+       <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-100 text-rose-700 text-sm font-medium mb-3"><span>🔑</span> <span>Sección 7</span>
+       </div>
+       <h2 class="font-heading text-4xl font-bold text-slate-800 mb-3">Meta keywords</h2>
+       <p class="text-lg text-slate-600">Palabras clave específicas para definir el contenido de tu página</p>
+      </div>
+      <div class="space-y-6">
+       <div class="p-6 rounded-xl bg-slate-800 text-slate-100">
+        <h3 class="font-bold text-lg text-white mb-3">Sintaxis básica:</h3><code class="block p-4 bg-slate-900 rounded-lg text-slate-200 font-mono text-sm overflow-x-auto"> &lt;meta name="keywords" content="palabra1, palabra2, frase clave, palabra3"&gt; </code>
+        <p class="text-slate-300 text-sm mt-3">Se colocan en el <code class="px-2 py-0.5 bg-slate-700 rounded">&lt;head&gt;</code> del documento HTML</p>
+       </div>
+       <div class="p-6 rounded-xl bg-amber-50 border border-amber-300">
+        <div class="flex items-start gap-3"><span class="text-2xl">⚠️</span>
+         <div>
+          <h3 class="font-bold text-amber-900 mb-2">Nota importante sobre meta keywords en 2024:</h3>
+          <p class="text-amber-900 leading-relaxed">Google oficialmente <strong>ya NO utiliza</strong> el meta tag keywords como factor de ranking desde 2009. Sin embargo, algunos otros buscadores menores aún lo consideran. Es mejor enfocarse en el contenido real de la página y en la meta description.</p>
+         </div>
+        </div>
+       </div>
+       <div class="p-6 rounded-xl bg-white border border-rose-100 shadow-sm">
+        <h3 class="font-bold text-lg text-slate-800 mb-3">Mejores prácticas (si decides usarlas):</h3>
+        <ul class="space-y-2 text-slate-700 mb-4">
+         <li class="flex items-start gap-3"><span class="text-rose-600">•</span> <span><strong>Cantidad:</strong> Entre 5 y 10 palabras o frases clave como máximo. Más de eso se considera spam.</span></li>
+         <li class="flex items-start gap-3"><span class="text-rose-600">•</span> <span><strong>Relevancia:</strong> Deben estar directamente relacionadas con el contenido de la página específica.</span></li>
+         <li class="flex items-start gap-3"><span class="text-rose-600">•</span> <span><strong>No repetir:</strong> Evitar repetir la misma palabra múltiples veces.</span></li>
+         <li class="flex items-start gap-3"><span class="text-rose-600">•</span> <span><strong>Separación:</strong> Usar comas para separar cada término.</span></li>
+        </ul>
+       </div>
+       <div class="grid md:grid-cols-2 gap-6">
+        <div class="p-6 rounded-xl bg-red-50 border-2 border-red-300">
+         <h3 class="font-bold text-red-800 mb-4 flex items-center gap-2"><span class="text-2xl">❌</span> <span>Evitar palabras genéricas</span></h3>
+         <p class="text-red-800 mb-3 text-sm">Palabras demasiado amplias que tienen alta competencia y baja intención específica:</p>
+         <div class="flex flex-wrap gap-2"><span class="px-3 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-medium">tecnología</span> <span class="px-3 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-medium">negocio</span> <span class="px-3 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-medium">gratis</span> <span class="px-3 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-medium">comida</span> <span class="px-3 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-medium">servicios</span> <span class="px-3 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-medium">productos</span>
+         </div>
+         <p class="text-red-700 text-xs mt-3"><strong>Problema:</strong> Son tan vagas que no ayudan a definir tu contenido ni atraen al público correcto.</p>
+        </div>
+        <div class="p-6 rounded-xl bg-green-50 border-2 border-green-300">
+         <h3 class="font-bold text-green-800 mb-4 flex items-center gap-2"><span class="text-2xl">✅</span> <span>Usar frases específicas</span></h3>
+         <p class="text-green-800 mb-3 text-sm">Frases descriptivas (long-tail keywords) que definen claramente tu contenido y audiencia:</p>
+         <div class="flex flex-wrap gap-2"><span class="px-3 py-1.5 rounded-full bg-green-100 text-green-700 text-sm font-medium">tendencias en tecnología 2024</span> <span class="px-3 py-1.5 rounded-full bg-green-100 text-green-700 text-sm font-medium">cursos gratuitos online</span> <span class="px-3 py-1.5 rounded-full bg-green-100 text-green-700 text-sm font-medium">restaurante vegano Buenos Aires</span> <span class="px-3 py-1.5 rounded-full bg-green-100 text-green-700 text-sm font-medium">guía SEO para principiantes</span>
+         </div>
+         <p class="text-green-700 text-xs mt-3"><strong>Ventaja:</strong> Menor competencia, mayor relevancia y mejor tasa de conversión.</p>
+        </div>
+       </div>
+       <div class="p-6 rounded-xl bg-amber-50 border border-amber-200">
+        <div class="flex items-start gap-3"><span class="text-xl">⚠️</span>
+         <p class="text-amber-800"><strong>Regla de oro:</strong> No repetir palabras en exceso. Google puede considerar esto como "keyword stuffing" (relleno de palabras clave), una práctica penalizada que puede perjudicar tu ranking.</p>
+        </div>
+       </div>
+       <div class="p-6 rounded-xl bg-blue-50 border border-blue-200">
+        <h3 class="font-bold text-blue-900 mb-3">Ejemplo práctico completo:</h3>
+        <div class="space-y-3">
+         <div class="p-4 bg-white rounded-lg">
+          <p class="text-sm font-semibold text-slate-700 mb-2">Para una página sobre recetas veganas:</p><code class="text-xs bg-slate-800 text-slate-100 p-3 rounded block overflow-x-auto"> &lt;meta name="keywords" content="recetas veganas fáciles, cocina vegana para principiantes, postres veganos sin horno, desayunos veganos rápidos, comida vegana económica"&gt; </code>
+         </div>
+         <div class="p-4 bg-white rounded-lg">
+          <p class="text-sm font-semibold text-slate-700 mb-2">Para un blog de marketing digital:</p><code class="text-xs bg-slate-800 text-slate-100 p-3 rounded block overflow-x-auto"> &lt;meta name="keywords" content="estrategias de marketing digital, publicidad en redes sociales, email marketing efectivo, contenido viral, SEO para empresas"&gt; </code>
+         </div>
+        </div>
+       </div>
+      </div>
+     </section><!-- Section 8: Resultados y publicidad -->
+     <section id="section-8" class="content-section">
+      <div class="mb-6">
+       <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-100 text-sky-700 text-sm font-medium mb-3"><span>📊</span> <span>Sección 8</span>
+       </div>
+       <h2 class="font-heading text-4xl font-bold text-slate-800 mb-3">Resultados y publicidad</h2>
+       <p class="text-lg text-slate-600">La relación entre SEO orgánico y publicidad pagada (SEM)</p>
+      </div>
+      <div class="space-y-6">
+       <div class="p-6 rounded-xl bg-sky-50 border border-sky-200">
+        <div class="flex items-start gap-3"><span class="text-3xl">💰</span>
+         <div>
+          <h3 class="font-bold text-sky-900 mb-3 text-lg">La realidad del posicionamiento en Google</h3>
+          <p class="text-sky-900 leading-relaxed mb-3">Podés tener el mejor sitio web, con SEO impecable, contenido de calidad excepcional, estructura perfecta y todas las buenas prácticas implementadas. Sin embargo, si no invertís en publicidad pagada (Google Ads), <strong>no existe garantía absoluta</strong> de que aparecerás en las primeras posiciones de búsqueda, especialmente en nichos competitivos.</p>
+          <p class="text-sky-800 text-sm">Esto es especialmente cierto en las primeras etapas de un sitio nuevo, o en industrias con alta competencia.</p>
+         </div>
+        </div>
+       </div>
+       <div class="grid md:grid-cols-2 gap-6">
+        <div class="p-6 rounded-xl bg-white border-2 border-purple-200 shadow-sm">
+         <div class="flex items-center gap-3 mb-4"><span class="text-4xl">🌱</span>
+          <h3 class="font-bold text-xl text-purple-900">SEO Orgánico</h3>
+         </div>
+         <ul class="space-y-3 text-slate-700">
+          <li class="flex items-start gap-2"><span class="text-green-600 text-xl">✓</span> <span><strong>Gratis:</strong> No pagas por cada clic</span></li>
+          <li class="flex items-start gap-2"><span class="text-green-600 text-xl">✓</span> <span><strong>Sostenible a largo plazo:</strong> Resultados duraderos</span></li>
+          <li class="flex items-start gap-2"><span class="text-green-600 text-xl">✓</span> <span><strong>Credibilidad:</strong> Los usuarios confían más en resultados orgánicos</span></li>
+          <li class="flex items-start gap-2"><span class="text-red-600 text-xl">✗</span> <span><strong>Lento:</strong> Puede tomar 6-12 meses ver resultados significativos</span></li>
+          <li class="flex items-start gap-2"><span class="text-red-600 text-xl">✗</span> <span><strong>Alta competencia:</strong> Difícil destacar en nichos saturados</span></li>
+          <li class="flex items-start gap-2"><span class="text-red-600 text-xl">✗</span> <span><strong>Incierto:</strong> No garantiza primeras posiciones</span></li>
+         </ul>
+        </div>
+        <div class="p-6 rounded-xl bg-white border-2 border-indigo-200 shadow-sm">
+         <div class="flex items-center gap-3 mb-4"><span class="text-4xl">🚀</span>
+          <h3 class="font-bold text-xl text-indigo-900">SEM (Google Ads)</h3>
+         </div>
+         <ul class="space-y-3 text-slate-700">
+          <li class="flex items-start gap-2"><span class="text-green-600 text-xl">✓</span> <span><strong>Resultados inmediatos:</strong> Tráfico desde el primer día</span></li>
+          <li class="flex items-start gap-2"><span class="text-green-600 text-xl">✓</span> <span><strong>Control total:</strong> Eliges posición, presupuesto y palabras clave</span></li>
+          <li class="flex items-start gap-2"><span class="text-green-600 text-xl">✓</span> <span><strong>Medible:</strong> ROI claro y rastreable</span></li>
+          <li class="flex items-start gap-2"><span class="text-red-600 text-xl">✗</span> <span><strong>Costoso:</strong> Pagas por cada clic (puede ser muy caro en nichos competitivos)</span></li>
+          <li class="flex items-start gap-2"><span class="text-red-600 text-xl">✗</span> <span><strong>Temporal:</strong> Cuando dejas de pagar, desapareces</span></li>
+          <li class="flex items-start gap-2"><span class="text-red-600 text-xl">✗</span> <span><strong>Menor confianza:</strong> Los usuarios saben que son anuncios</span></li>
+         </ul>
+        </div>
+       </div>
+       <div class="p-6 rounded-xl bg-white border border-slate-200 shadow-sm">
+        <h3 class="font-bold text-lg text-slate-800 mb-3">¿Cómo funciona Google Ads?</h3>
+        <p class="text-slate-700 leading-relaxed mb-4">Google muestra los anuncios pagados en las <strong>primeras 3-4 posiciones</strong> de los resultados de búsqueda (marcados con "Anuncio" o "Patrocinado"). Solo después aparecen los resultados orgánicos.</p>
+        <div class="p-4 bg-slate-50 rounded-lg">
+         <p class="text-sm text-slate-600 mb-2"><strong>Estructura típica de una página de resultados:</strong></p>
+         <div class="space-y-1 text-sm">
+          <div class="p-2 bg-yellow-100 border border-yellow-300 rounded flex items-center gap-2"><span class="text-xs bg-yellow-600 text-white px-2 py-0.5 rounded">AD</span> <span class="text-slate-700">Anuncio pagado #1</span>
+          </div>
+          <div class="p-2 bg-yellow-100 border border-yellow-300 rounded flex items-center gap-2"><span class="text-xs bg-yellow-600 text-white px-2 py-0.5 rounded">AD</span> <span class="text-slate-700">Anuncio pagado #2</span>
+          </div>
+          <div class="p-2 bg-yellow-100 border border-yellow-300 rounded flex items-center gap-2"><span class="text-xs bg-yellow-600 text-white px-2 py-0.5 rounded">AD</span> <span class="text-slate-700">Anuncio pagado #3</span>
+          </div>
+          <div class="h-px bg-slate-300 my-2"></div>
+          <div class="p-2 bg-white border border-slate-200 rounded"><span class="text-slate-700">Resultado orgánico #1 (SEO)</span>
+          </div>
+          <div class="p-2 bg-white border border-slate-200 rounded"><span class="text-slate-700">Resultado orgánico #2 (SEO)</span>
+          </div>
+          <div class="p-2 bg-white border border-slate-200 rounded"><span class="text-slate-700">Resultado orgánico #3 (SEO)</span>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="p-6 rounded-xl bg-green-50 border-2 border-green-300">
+        <div class="flex items-start gap-3"><span class="text-3xl">✅</span>
+         <div>
+          <h3 class="font-bold text-green-900 mb-3 text-lg">Esto NO significa que el SEO no sirva</h3>
+          <p class="text-green-900 leading-relaxed mb-3">El SEO sigue siendo <strong>extremadamente valioso</strong> y Google evalúa permanentemente tu sitio. Un buen SEO te posiciona como autoridad y, con el tiempo, puede llevarte a las primeras posiciones orgánicas sin pagar por publicidad.</p>
+          <ul class="space-y-2 text-green-800">
+           <li class="flex items-start gap-2"><span>•</span> <span><strong>Inversión a largo plazo:</strong> Los resultados son acumulativos y duraderos</span></li>
+           <li class="flex items-start gap-2"><span>•</span> <span><strong>Credibilidad aumentada:</strong> Aparecer orgánicamente genera más confianza</span></li>
+           <li class="flex items-start gap-2"><span>•</span> <span><strong>Mayor ROI a largo plazo:</strong> No pagas por cada visita</span></li>
+           <li class="flex items-start gap-2"><span>•</span> <span><strong>Sostenibilidad:</strong> No dependes de un presupuesto publicitario continuo</span></li>
+          </ul>
+         </div>
+        </div>
+       </div>
+       <div class="p-6 rounded-xl bg-indigo-50 border border-indigo-200">
+        <h3 class="font-bold text-indigo-900 mb-3">💡 Estrategia recomendada: Combinación SEO + SEM</h3>
+        <p class="text-indigo-800 leading-relaxed mb-3">La estrategia más efectiva suele ser <strong>combinar ambos enfoques</strong>:</p>
+        <ul class="space-y-2 text-indigo-800">
+         <li class="flex items-start gap-2"><span class="font-bold">1.</span> <span><strong>Corto plazo:</strong> Usar Google Ads para generar tráfico inmediato mientras tu SEO madura</span></li>
+         <li class="flex items-start gap-2"><span class="font-bold">2.</span> <span><strong>Mediano plazo:</strong> Trabajar en SEO para construir presencia orgánica sostenible</span></li>
+         <li class="flex items-start gap-2"><span class="font-bold">3.</span> <span><strong>Largo plazo:</strong> Reducir inversión en Ads a medida que mejora tu posicionamiento orgánico</span></li>
+        </ul>
+       </div>
+      </div>
+     </section><!-- Section 9: Prácticas penalizadas -->
+     <section id="section-9" class="content-section">
+      <div class="mb-6">
+       <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-100 text-red-700 text-sm font-medium mb-3"><span>⛔</span> <span>Sección 9</span>
+       </div>
+       <h2 class="font-heading text-4xl font-bold text-slate-800 mb-3">Prácticas penalizadas por Google</h2>
+       <p class="text-lg text-slate-600">Técnicas de "Black Hat SEO" que debes evitar absolutamente</p>
+      </div>
+      <div class="space-y-6">
+       <div class="p-6 rounded-xl bg-red-50 border-2 border-red-300">
+        <div class="flex items-start gap-3"><span class="text-3xl">⚠️</span>
+         <div>
+          <h3 class="font-bold text-red-900 mb-2 text-lg">Advertencia crítica</h3>
+          <p class="text-red-900 leading-relaxed">Google penaliza severamente las prácticas de manipulación que intentan "engañar" al algoritmo. Las penalizaciones pueden incluir <strong>caída drástica en rankings, desindexación parcial o incluso eliminación completa de los resultados de búsqueda</strong>. Recuperarse de una penalización puede llevar meses o incluso años.</p>
+         </div>
+        </div>
+       </div>
+       <div class="grid md:grid-cols-2 gap-4">
+        <div class="p-5 rounded-xl bg-white border-2 border-red-200 shadow-sm">
+         <div class="flex items-start gap-3 mb-3"><span class="text-2xl text-red-500">✗</span>
+          <h3 class="font-bold text-slate-800">Contenido robado o duplicado</h3>
+         </div>
+         <p class="text-slate-700 text-sm leading-relaxed mb-2">Copiar contenido de otros sitios web o duplicar el mismo contenido en múltiples páginas.</p>
+         <div class="p-3 bg-red-50 rounded-lg mt-2">
+          <p class="text-xs text-red-800"><strong>Penalización:</strong> Google prioriza el contenido original y penaliza sitios con contenido duplicado o plagiado.</p>
+         </div>
+        </div>
+        <div class="p-5 rounded-xl bg-white border-2 border-red-200 shadow-sm">
+         <div class="flex items-start gap-3 mb-3"><span class="text-2xl text-red-500">✗</span>
+          <h3 class="font-bold text-slate-800">Keyword Stuffing</h3>
+         </div>
+         <p class="text-slate-700 text-sm leading-relaxed mb-2">Repetir excesivamente palabras clave de manera artificial y poco natural en el contenido.</p>
+         <div class="p-3 bg-slate-50 rounded-lg mt-2 mb-2">
+          <p class="text-xs text-slate-600"><em>Ejemplo malo:</em> "Comprar zapatos, zapatos baratos, zapatos online, los mejores zapatos..."</p>
+         </div>
+         <div class="p-3 bg-red-50 rounded-lg">
+          <p class="text-xs text-red-800"><strong>Penalización:</strong> Google detecta densidad antinatural de keywords y penaliza el ranking.</p>
+         </div>
+        </div>
+        <div class="p-5 rounded-xl bg-white border-2 border-red-200 shadow-sm">
+         <div class="flex items-start gap-3 mb-3"><span class="text-2xl text-red-500">✗</span>
+          <h3 class="font-bold text-slate-800">Comprar backlinks</h3>
+         </div>
+         <p class="text-slate-700 text-sm leading-relaxed mb-2">Pagar por enlaces desde otros sitios o participar en esquemas de intercambio masivo de enlaces.</p>
+         <div class="p-3 bg-red-50 rounded-lg mt-2">
+          <p class="text-xs text-red-800"><strong>Penalización:</strong> Google Penguin identifica patrones de enlaces artificiales y aplica penalizaciones severas. Puede resultar en desindexación total.</p>
+         </div>
+        </div>
+        <div class="p-5 rounded-xl bg-white border-2 border-red-200 shadow-sm">
+         <div class="flex items-start gap-3 mb-3"><span class="text-2xl text-red-500">✗</span>
+          <h3 class="font-bold text-slate-800">Contenido engañoso o clickbait</h3>
+         </div>
+         <p class="text-slate-700 text-sm leading-relaxed mb-2">Títulos o descripciones que prometen algo que el contenido no cumple, o información falsa.</p>
+         <div class="p-3 bg-red-50 rounded-lg mt-2">
+          <p class="text-xs text-red-800"><strong>Penalización:</strong> Afecta negativamente las métricas de usuario (rebote alto, tiempo bajo) y Google reduce la visibilidad.</p>
+         </div>
+        </div>
+        <div class="p-5 rounded-xl bg-white border-2 border-red-200 shadow-sm">
+         <div class="flex items-start gap-3 mb-3"><span class="text-2xl text-red-500">✗</span>
+          <h3 class="font-bold text-slate-800">Velocidad de carga lenta</h3>
+         </div>
+         <p class="text-slate-700 text-sm leading-relaxed mb-2">Sitios que tardan más de 3-4 segundos en cargar, especialmente en dispositivos móviles.</p>
+         <div class="p-3 bg-red-50 rounded-lg mt-2">
+          <p class="text-xs text-red-800"><strong>Penalización:</strong> Desde 2018, la velocidad es un factor de ranking. Sitios lentos pierden posiciones.</p>
+         </div>
+        </div>
+        <div class="p-5 rounded-xl bg-white border-2 border-red-200 shadow-sm">
+         <div class="flex items-start gap-3 mb-3"><span class="text-2xl text-red-500">✗</span>
+          <h3 class="font-bold text-slate-800">Mala experiencia móvil</h3>
+         </div>
+         <p class="text-slate-700 text-sm leading-relaxed mb-2">Sitios no responsive, texto ilegible, botones muy pequeños o elementos que no funcionan en móvil.</p>
+         <div class="p-3 bg-red-50 rounded-lg mt-2">
+          <p class="text-xs text-red-800"><strong>Penalización:</strong> Con el índice mobile-first, la versión móvil es prioritaria. Mala experiencia = peor ranking.</p>
+         </div>
+        </div>
+        <div class="p-5 rounded-xl bg-white border-2 border-red-200 shadow-sm">
+         <div class="flex items-start gap-3 mb-3"><span class="text-2xl text-red-500">✗</span>
+          <h3 class="font-bold text-slate-800">Exceso de pop-ups intrusivos</h3>
+         </div>
+         <p class="text-slate-700 text-sm leading-relaxed mb-2">Pop-ups que cubren todo el contenido principal, especialmente en móvil, dificultando el acceso.</p>
+         <div class="p-3 bg-red-50 rounded-lg mt-2">
+          <p class="text-xs text-red-800"><strong>Penalización:</strong> Google penaliza intersticiales intrusivos que empeoran la experiencia del usuario.</p>
+         </div>
+        </div>
+        <div class="p-5 rounded-xl bg-white border-2 border-red-200 shadow-sm">
+         <div class="flex items-start gap-3 mb-3"><span class="text-2xl text-red-500">✗</span>
+          <h3 class="font-bold text-slate-800">Sitio hackeado o comprometido</h3>
+         </div>
+         <p class="text-slate-700 text-sm leading-relaxed mb-2">Sitios infectados con malware, phishing o que han sido comprometidos por atacantes.</p>
+         <div class="p-3 bg-red-50 rounded-lg mt-2">
+          <p class="text-xs text-red-800"><strong>Penalización:</strong> Google marca el sitio como "Este sitio puede estar hackeado" y lo elimina de los resultados hasta que se resuelva.</p>
+         </div>
+        </div>
+       </div>
+       <div class="p-6 rounded-xl bg-slate-800 text-slate-100">
+        <h3 class="font-bold text-white mb-3">Otras prácticas penalizadas:</h3>
+        <ul class="space-y-2 text-slate-300 text-sm">
+         <li class="flex items-start gap-2"><span class="text-red-400">•</span> <span><strong>Cloaking:</strong> Mostrar contenido diferente a usuarios vs. bots de Google</span></li>
+         <li class="flex items-start gap-2"><span class="text-red-400">•</span> <span><strong>Texto oculto:</strong> Texto blanco sobre fondo blanco para incluir keywords invisibles</span></li>
+         <li class="flex items-start gap-2"><span class="text-red-400">•</span> <span><strong>Doorway pages:</strong> Páginas creadas solo para atraer tráfico y redirigir</span></li>
+         <li class="flex items-start gap-2"><span class="text-red-400">•</span> <span><strong>Link farms:</strong> Redes de sitios que se enlazan artificialmente entre sí</span></li>
+         <li class="flex items-start gap-2"><span class="text-red-400">•</span> <span><strong>Spinning de contenido:</strong> Reescribir contenido ligeramente para parecer original</span></li>
+         <li class="flex items-start gap-2"><span class="text-red-400">•</span> <span><strong>Redirecciones engañosas:</strong> Redirigir a los usuarios a páginas inesperadas</span></li>
+        </ul>
+       </div>
+       <div class="p-6 rounded-xl bg-green-50 border border-green-300">
+        <h3 class="font-bold text-green-900 mb-3">✅ En su lugar, enfócate en "White Hat SEO":</h3>
+        <ul class="space-y-2 text-green-800">
+         <li class="flex items-start gap-2"><span>•</span> <span><strong>Contenido original y valioso</strong> que resuelva problemas reales de los usuarios</span></li>
+         <li class="flex items-start gap-2"><span>•</span> <span><strong>Enlaces naturales</strong> ganados por la calidad de tu contenido</span></li>
+         <li class="flex items-start gap-2"><span>•</span> <span><strong>Optimización técnica</strong> legítima y centrada en la experiencia del usuario</span></li>
+         <li class="flex items-start gap-2"><span>•</span> <span><strong>Transparencia y honestidad</strong> en toda tu estrategia de marketing</span></li>
+        </ul>
+       </div>
+      </div>
+     </section><!-- Section 10: SEO Local -->
+     <section id="section-10" class="content-section">
+      <div class="mb-6">
+       <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-100 text-teal-700 text-sm font-medium mb-3"><span>📍</span> <span>Sección 10</span>
+       </div>
+       <h2 class="font-heading text-4xl font-bold text-slate-800 mb-3">SEO Local</h2>
+       <p class="text-lg text-slate-600">Optimización para negocios con ubicación física o servicios locales</p>
+      </div>
+      <div class="space-y-6">
+       <div class="p-6 rounded-xl bg-teal-50 border border-teal-200">
+        <div class="flex items-start gap-3"><span class="text-3xl">📍</span>
+         <div>
+          <h3 class="font-bold text-teal-900 mb-2 text-lg">¿Qué es el SEO Local?</h3>
+          <p class="text-teal-900 leading-relaxed">El SEO Local es la práctica de optimizar tu presencia online para atraer más clientes desde búsquedas locales relevantes. Es fundamental para negocios físicos (restaurantes, tiendas, oficinas) o servicios que operan en áreas geográficas específicas (fontaneros, abogados locales, etc.).</p>
+         </div>
+        </div>
+       </div>
+       <div class="p-6 rounded-xl bg-white border border-teal-100 shadow-sm">
+        <div class="flex items-start gap-4 mb-4"><span class="text-4xl">🏢</span>
+         <div>
+          <h3 class="font-bold text-lg text-slate-800 mb-2">Google My Business (GMB) / Google Business Profile</h3>
+          <p class="text-slate-700 leading-relaxed mb-3">Es la herramienta MÁS IMPORTANTE para SEO Local. Es gratuita y aparece en:</p>
+          <ul class="space-y-2 text-slate-700 mb-4">
+           <li class="flex items-start gap-2"><span class="text-teal-600">•</span> <span><strong>Google Maps:</strong> Cuando alguien busca negocios cerca</span></li>
+           <li class="flex items-start gap-2"><span class="text-teal-600">•</span> <span><strong>Panel de conocimiento:</strong> Cuadro a la derecha en resultados de búsqueda</span></li>
+           <li class="flex items-start gap-2"><span class="text-teal-600">•</span> <span><strong>Local Pack:</strong> Los 3 resultados destacados con mapa</span></li>
+          </ul>
+          <div class="p-4 bg-teal-50 rounded-lg">
+           <p class="font-semibold text-teal-900 mb-2">Información que debes completar en GMB:</p>
+           <ul class="space-y-1 text-sm text-teal-800">
+            <li>✓ Nombre del negocio exacto</li>
+            <li>✓ Dirección completa y precisa</li>
+            <li>✓ Teléfono de contacto</li>
+            <li>✓ Horarios de atención (actualízalos en feriados)</li>
+            <li>✓ Categoría del negocio (muy importante)</li>
+            <li>✓ Sitio web</li>
+            <li>✓ Descripción del negocio (750 caracteres)</li>
+            <li>✓ Fotos de alta calidad (interior, exterior, productos)</li>
+            <li>✓ Atributos (ej: "Acceso para sillas de ruedas")</li>
+           </ul>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="p-6 rounded-xl bg-white border border-cyan-100 shadow-sm">
+        <div class="flex items-start gap-4"><span class="text-4xl">📋</span>
+         <div>
+          <h3 class="font-bold text-lg text-slate-800 mb-3">Concepto NAP (Name, Address, Phone)</h3>
+          <p class="text-slate-700 leading-relaxed mb-4">NAP es un acrónimo fundamental en SEO Local que representa la información básica de contacto de tu negocio:</p>
+          <div class="grid gap-3 mb-4">
+           <div class="p-4 bg-cyan-50 rounded-lg border-l-4 border-cyan-500">
+            <div class="flex items-start gap-3"><span class="font-bold text-cyan-700 text-2xl">N</span>
+             <div>
+              <p class="font-bold text-slate-800">Name (Nombre)</p>
+              <p class="text-sm text-slate-600">El nombre legal de tu negocio, exactamente como está registrado</p>
+             </div>
+            </div>
+           </div>
+           <div class="p-4 bg-cyan-50 rounded-lg border-l-4 border-cyan-500">
+            <div class="flex items-start gap-3"><span class="font-bold text-cyan-700 text-2xl">A</span>
+             <div>
+              <p class="font-bold text-slate-800">Address (Dirección)</p>
+              <p class="text-sm text-slate-600">Tu dirección física completa: calle, número, ciudad, código postal, provincia/estado</p>
+             </div>
+            </div>
+           </div>
+           <div class="p-4 bg-cyan-50 rounded-lg border-l-4 border-cyan-500">
+            <div class="flex items-start gap-3"><span class="font-bold text-cyan-700 text-2xl">P</span>
+             <div>
+              <p class="font-bold text-slate-800">Phone (Teléfono)</p>
+              <p class="text-sm text-slate-600">Número de teléfono local con código de área</p>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="p-4 bg-amber-50 border-2 border-amber-300 rounded-lg">
+           <p class="font-bold text-amber-900 mb-2">⚠️ REGLA DE ORO: Consistencia absoluta</p>
+           <p class="text-amber-900 text-sm leading-relaxed mb-3">Tu información NAP debe ser <strong>EXACTAMENTE IGUAL</strong> en todos los sitios donde aparezca:</p>
+           <ul class="space-y-1 text-sm text-amber-800">
+            <li>• Tu sitio web (footer, página de contacto)</li>
+            <li>• Google My Business</li>
+            <li>• Redes sociales (Facebook, Instagram, LinkedIn)</li>
+            <li>• Directorios locales y páginas amarillas</li>
+            <li>• Perfiles en sitios de reseñas (Yelp, TripAdvisor)</li>
+            <li>• Mapas y apps de navegación</li>
+           </ul>
+           <p class="text-amber-900 text-sm mt-3"><strong>Ejemplo de error:</strong> Si en un sitio dices "Av. Corrientes 1234" y en otro "Avenida Corrientes 1234", Google puede confundirse y perjudicar tu ranking local.</p>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="p-6 rounded-xl bg-white border border-teal-100 shadow-sm">
+        <div class="flex items-start gap-4"><span class="text-4xl">⭐</span>
+         <div>
+          <h3 class="font-bold text-lg text-slate-800 mb-2">Reseñas y valoraciones</h3>
+          <p class="text-slate-700 leading-relaxed mb-3">Las reseñas de clientes son uno de los factores más importantes para ranking local:</p>
+          <ul class="space-y-2 text-slate-700 mb-3">
+           <li class="flex items-start gap-2"><span class="text-teal-600">•</span> <span><strong>Cantidad:</strong> Más reseñas = más confianza y mejor posicionamiento</span></li>
+           <li class="flex items-start gap-2"><span class="text-teal-600">•</span> <span><strong>Calidad:</strong> Valoración promedio alta (idealmente 4.5+ estrellas)</span></li>
+           <li class="flex items-start gap-2"><span class="text-teal-600">•</span> <span><strong>Frecuencia:</strong> Reseñas recientes tienen más peso que antiguas</span></li>
+           <li class="flex items-start gap-2"><span class="text-teal-600">•</span> <span><strong>Respuestas:</strong> Responder a todas las reseñas (positivas y negativas) muestra compromiso</span></li>
+          </ul>
+          <div class="p-3 bg-green-50 rounded-lg border border-green-200">
+           <p class="text-sm text-green-900"><strong>💡 Tip:</strong> Pide reseñas a clientes satisfechos. Puedes enviar un link directo que facilite dejar la reseña en Google.</p>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="p-6 rounded-xl bg-white border border-teal-100 shadow-sm">
+        <div class="flex items-start gap-4"><span class="text-4xl">✨</span>
+         <div>
+          <h3 class="font-bold text-lg text-slate-800 mb-2">Otras acciones importantes para SEO Local</h3>
+          <div class="space-y-3">
+           <div class="p-3 bg-slate-50 rounded-lg">
+            <p class="font-semibold text-slate-800 mb-1">Publicar regularmente en Google</p>
+            <p class="text-sm text-slate-700">Usa las "Publicaciones" de GMB para compartir ofertas, eventos, noticias o contenido relevante. Mantiene tu perfil activo.</p>
+           </div>
+           <div class="p-3 bg-slate-50 rounded-lg">
+            <p class="font-semibold text-slate-800 mb-1">Contenido geo-localizado</p>
+            <p class="text-sm text-slate-700">Incluye en tu sitio web contenido específico sobre tu ubicación: "Restaurante en Palermo, Buenos Aires", páginas de localización si tienes múltiples sucursales.</p>
+           </div>
+           <div class="p-3 bg-slate-50 rounded-lg">
+            <p class="font-semibold text-slate-800 mb-1">Directorios y listados locales</p>
+            <p class="text-sm text-slate-700">Registra tu negocio en directorios locales relevantes, cámaras de comercio, asociaciones de tu industria.</p>
+           </div>
+           <div class="p-3 bg-slate-50 rounded-lg">
+            <p class="font-semibold text-slate-800 mb-1">Citas locales (Local Citations)</p>
+            <p class="text-sm text-slate-700">Menciones de tu NAP en otros sitios web, incluso sin enlace. Validan tu ubicación y existencia.</p>
+           </div>
+           <div class="p-3 bg-slate-50 rounded-lg">
+            <p class="font-semibold text-slate-800 mb-1">Enlaces desde sitios locales</p>
+            <p class="text-sm text-slate-700">Backlinks desde periódicos locales, blogs de tu ciudad, organizaciones comunitarias, etc.</p>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="p-6 rounded-xl bg-indigo-50 border border-indigo-200">
+        <h3 class="font-bold text-indigo-900 mb-3">📊 Ejemplo de búsqueda local:</h3>
+        <p class="text-indigo-800 mb-3">Cuando alguien busca "restaurante italiano cerca de mí" o "fontanero en Madrid", Google muestra:</p>
+        <ol class="space-y-2 text-indigo-800">
+         <li class="flex items-start gap-2"><span class="font-bold">1.</span> <span><strong>Local Pack:</strong> Mapa con 3 negocios destacados</span></li>
+         <li class="flex items-start gap-2"><span class="font-bold">2.</span> <span><strong>Resultados orgánicos locales:</strong> Sitios web relevantes de la zona</span></li>
+        </ol>
+        <p class="text-indigo-800 text-sm mt-3">Tu objetivo es aparecer en ese Local Pack, que captura la mayoría de los clics.</p>
+       </div>
+      </div>
+     </section><!-- Section 11: Página web -->
+     <section id="section-11" class="content-section">
+      <div class="mb-6">
+       <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-lime-100 text-lime-700 text-sm font-medium mb-3"><span>🌐</span> <span>Sección 11</span>
+       </div>
+       <h2 class="font-heading text-4xl font-bold text-slate-800 mb-3">Cómo funciona una página web</h2>
+       <p class="text-lg text-slate-600">Fundamentos: Servidores, Dominios y Hosting</p>
+      </div>
+      <div class="space-y-6">
+       <div class="p-6 rounded-xl bg-lime-50 border border-lime-200">
+        <div class="flex items-start gap-3"><span class="text-3xl">💡</span>
+         <div>
+          <p class="text-lime-900 leading-relaxed">Antes de profundizar en SEO, es importante entender los conceptos básicos de cómo funciona una página web y los elementos técnicos necesarios para que exista en internet.</p>
+         </div>
+        </div>
+       </div>
+       <div class="p-6 rounded-xl bg-white border border-lime-100 shadow-sm">
+        <div class="flex items-start gap-4 mb-4"><span class="text-5xl">🖥️</span>
+         <div>
+          <h3 class="font-bold text-2xl text-lime-900 mb-3">¿Qué es un servidor?</h3>
+          <p class="text-slate-800 text-lg leading-relaxed mb-4">Un <strong>servidor</strong> es una computadora potente y especializada que está encendida 24/7 y conectada permanentemente a internet. Su función principal es:</p>
+          <ul class="space-y-2 text-slate-700 mb-4">
+           <li class="flex items-start gap-3"><span class="text-lime-600 text-xl">•</span> <span><strong>Almacenar datos:</strong> Todos los archivos de tu sitio web (HTML, CSS, JavaScript, imágenes, videos, bases de datos)</span></li>
+           <li class="flex items-start gap-3"><span class="text-lime-600 text-xl">•</span> <span><strong>Enviar información:</strong> Cuando alguien visita tu sitio, el servidor envía los archivos necesarios al navegador del visitante</span></li>
+           <li class="flex items-start gap-3"><span class="text-lime-600 text-xl">•</span> <span><strong>Responder solicitudes:</strong> Procesa peticiones (consultas a bases de datos, formularios, etc.) y devuelve respuestas</span></li>
+           <li class="flex items-start gap-3"><span class="text-lime-600 text-xl">•</span> <span><strong>Garantizar disponibilidad:</strong> Asegura que tu sitio esté accesible en todo momento</span></li>
+          </ul>
+          <div class="p-4 bg-slate-50 rounded-lg mb-3">
+           <p class="font-semibold text-slate-800 mb-2">Tipos de servidores:</p>
+           <div class="space-y-2 text-sm text-slate-700">
+            <div class="flex items-start gap-2"><span class="font-bold text-lime-700">Compartido:</span> <span>Múltiples sitios en un mismo servidor (económico, para sitios pequeños)</span>
+            </div>
+            <div class="flex items-start gap-2"><span class="font-bold text-lime-700">VPS:</span> <span>Servidor virtual privado con recursos dedicados (balance precio-rendimiento)</span>
+            </div>
+            <div class="flex items-start gap-2"><span class="font-bold text-lime-700">Dedicado:</span> <span>Servidor completo solo para tu sitio (máximo rendimiento, costoso)</span>
+            </div>
+            <div class="flex items-start gap-2"><span class="font-bold text-lime-700">Cloud:</span> <span>Red de servidores interconectados (escalable, confiable)</span>
+            </div>
+           </div>
+          </div>
+          <div class="p-4 bg-lime-50 border border-lime-200 rounded-lg">
+           <p class="text-sm text-lime-900"><strong>Ejemplos de proveedores:</strong></p>
+           <div class="flex flex-wrap gap-2 mt-2"><span class="px-3 py-1 bg-white rounded-lg text-sm text-slate-700 border border-lime-300">Microsoft Azure</span> <span class="px-3 py-1 bg-white rounded-lg text-sm text-slate-700 border border-lime-300">Amazon Web Services (AWS)</span> <span class="px-3 py-1 bg-white rounded-lg text-sm text-slate-700 border border-lime-300">Google Cloud</span> <span class="px-3 py-1 bg-white rounded-lg text-sm text-slate-700 border border-lime-300">DigitalOcean</span> <span class="px-3 py-1 bg-white rounded-lg text-sm text-slate-700 border border-lime-300">Hostinger</span>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="p-6 rounded-xl bg-white border border-green-100 shadow-sm">
+        <div class="flex items-start gap-4 mb-4"><span class="text-5xl">🌍</span>
+         <div>
+          <h3 class="font-bold text-2xl text-green-900 mb-3">¿Qué es un dominio?</h3>
+          <p class="text-slate-800 text-lg leading-relaxed mb-4">Un <strong>dominio</strong> es la dirección única y legible que identifica tu sitio web en internet. Es lo que los usuarios escriben en el navegador para acceder a tu sitio.</p>
+          <div class="p-4 bg-green-50 rounded-lg mb-4">
+           <p class="font-semibold text-green-900 mb-2">Ejemplo de dominio completo:</p>
+           <div class="flex items-center gap-2 flex-wrap"><span class="px-3 py-2 bg-purple-100 text-purple-800 rounded-lg font-mono text-sm">blog</span> <span class="text-slate-500">.</span> <span class="px-3 py-2 bg-pink-100 text-pink-800 rounded-lg font-mono text-sm">misitio</span> <span class="text-slate-500">.</span> <span class="px-3 py-2 bg-rose-100 text-rose-800 rounded-lg font-mono text-sm">com</span>
+           </div>
+           <div class="grid grid-cols-3 gap-3 mt-3 text-sm">
+            <div>
+             <p class="font-bold text-purple-800">Subdominio</p>
+             <p class="text-purple-700 text-xs">Opcional, para secciones específicas</p>
+            </div>
+            <div>
+             <p class="font-bold text-pink-800">Dominio</p>
+             <p class="text-pink-700 text-xs">Tu nombre único</p>
+            </div>
+            <div>
+             <p class="font-bold text-rose-800">TLD</p>
+             <p class="text-rose-700 text-xs">Top-Level Domain (extensión)</p>
+            </div>
+           </div>
+          </div>
+          <div class="space-y-3 mb-4">
+           <div class="p-3 bg-slate-50 rounded-lg">
+            <p class="font-semibold text-slate-800 mb-1">Extensiones TLD comunes:</p>
+            <div class="flex flex-wrap gap-2 mt-2"><span class="text-sm"><strong>.com</strong> - Comercial (el más popular)</span> <span class="text-slate-300">|</span> <span class="text-sm"><strong>.org</strong> - Organizaciones</span> <span class="text-slate-300">|</span> <span class="text-sm"><strong>.net</strong> - Redes</span> <span class="text-slate-300">|</span> <span class="text-sm"><strong>.edu</strong> - Educativo</span> <span class="text-slate-300">|</span> <span class="text-sm"><strong>.ar / .es / .mx</strong> - Por país</span>
+            </div>
+           </div>
+           <div class="p-3 bg-slate-50 rounded-lg">
+            <p class="font-semibold text-slate-800 mb-1">Sistema DNS (Domain Name System):</p>
+            <p class="text-sm text-slate-700">El DNS es como la "agenda telefónica" de internet. Traduce nombres de dominio legibles (ejemplo.com) a direcciones IP numéricas (192.168.1.1) que las computadoras entienden.</p>
+           </div>
+          </div>
+          <div class="p-4 bg-green-50 border border-green-200 rounded-lg">
+           <p class="font-semibold text-green-900 mb-2">Costo de dominios:</p>
+           <ul class="space-y-1 text-sm text-green-800">
+            <li>• <strong>Gratuitos:</strong> Subdominios como misitio.wordpress.com, misitio.github.io</li>
+            <li>• <strong>De pago:</strong> Dominio propio desde $10-15 USD/año (.com típico)</li>
+            <li>• <strong>Premium:</strong> Dominios cortos o muy demandados pueden costar miles</li>
+           </ul>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="p-6 rounded-xl bg-white border border-amber-100 shadow-sm">
+        <div class="flex items-start gap-4"><span class="text-4xl">📝</span>
+         <div>
+          <h3 class="font-bold text-lg text-slate-800 mb-3">Registro de dominios</h3>
+          <p class="text-slate-700 leading-relaxed mb-3">Para obtener un dominio, debes registrarlo a través de un <strong>registrador de dominios</strong> acreditado. El registro típicamente se renueva anualmente.</p>
+          <div class="p-4 bg-amber-50 rounded-lg mb-3">
+           <p class="font-semibold text-amber-900 mb-2">Registradores populares:</p>
+           <div class="flex flex-wrap gap-2"><span class="px-3 py-1.5 bg-white rounded-lg text-sm text-slate-700 border border-amber-300">Hostinger</span> <span class="px-3 py-1.5 bg-white rounded-lg text-sm text-slate-700 border border-amber-300">GoDaddy</span> <span class="px-3 py-1.5 bg-white rounded-lg text-sm text-slate-700 border border-amber-300">Namecheap</span> <span class="px-3 py-1.5 bg-white rounded-lg text-sm text-slate-700 border border-amber-300">Google Domains</span> <span class="px-3 py-1.5 bg-white rounded-lg text-sm text-slate-700 border border-amber-300">Domain.com</span> <span class="px-3 py-1.5 bg-white rounded-lg text-sm text-slate-700 border border-amber-300">Cloudflare</span>
+           </div>
+          </div>
+          <div class="p-4 bg-blue-50 rounded-lg border border-blue-200">
+           <p class="font-semibold text-blue-900 mb-2">💡 Tips para elegir un buen dominio:</p>
+           <ul class="space-y-1 text-sm text-blue-800">
+            <li>✓ Corto y fácil de recordar</li>
+            <li>✓ Fácil de escribir (sin guiones ni números complicados)</li>
+            <li>✓ Relacionado con tu marca o negocio</li>
+            <li>✓ Preferir .com si está disponible (más confiable)</li>
+            <li>✓ Verificar que no esté muy similar a marcas existentes</li>
+           </ul>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="p-6 rounded-xl bg-gradient-to-br from-indigo-50 to-purple-50 border border-indigo-200">
+        <h3 class="font-bold text-indigo-900 mb-4 text-xl">🔄 ¿Cómo se conectan servidor y dominio?</h3>
+        <div class="space-y-3">
+         <div class="p-4 bg-white rounded-lg border border-indigo-200">
+          <p class="font-semibold text-slate-800 mb-2">Paso 1: Usuario escribe el dominio</p>
+          <p class="text-sm text-slate-700">El usuario ingresa "www.ejemplo.com" en su navegador</p>
+         </div>
+         <div class="flex items-center justify-center text-indigo-600 text-2xl">
+          ↓
+         </div>
+         <div class="p-4 bg-white rounded-lg border border-indigo-200">
+          <p class="font-semibold text-slate-800 mb-2">Paso 2: Consulta DNS</p>
+          <p class="text-sm text-slate-700">El DNS traduce "ejemplo.com" a la IP del servidor (ej: 192.168.1.100)</p>
+         </div>
+         <div class="flex items-center justify-center text-indigo-600 text-2xl">
+          ↓
+         </div>
+         <div class="p-4 bg-white rounded-lg border border-indigo-200">
+          <p class="font-semibold text-slate-800 mb-2">Paso 3: Conexión al servidor</p>
+          <p class="text-sm text-slate-700">El navegador se conecta al servidor usando la dirección IP</p>
+         </div>
+         <div class="flex items-center justify-center text-indigo-600 text-2xl">
+          ↓
+         </div>
+         <div class="p-4 bg-white rounded-lg border border-indigo-200">
+          <p class="font-semibold text-slate-800 mb-2">Paso 4: Servidor envía archivos</p>
+          <p class="text-sm text-slate-700">El servidor envía HTML, CSS, JS e imágenes al navegador del usuario</p>
+         </div>
+         <div class="flex items-center justify-center text-indigo-600 text-2xl">
+          ↓
+         </div>
+         <div class="p-4 bg-white rounded-lg border border-indigo-200">
+          <p class="font-semibold text-slate-800 mb-2">Paso 5: Renderizado</p>
+          <p class="text-sm text-slate-700">El navegador interpreta los archivos y muestra la página web al usuario</p>
+         </div>
+        </div>
+        <p class="text-sm text-indigo-800 mt-4 text-center italic">Todo este proceso ocurre en milisegundos ⚡</p>
+       </div>
+      </div>
+     </section>
+    </div>
+   </main>
+  </div>
+  <script>
+    const defaultConfig = {
+      main_title: 'SEO – Buenas prácticas'
+    };
+
+    // Highlight active nav link on scroll
+    function updateActiveNav() {
+      const sections = document.querySelectorAll('.content-section');
+      const navLinks = document.querySelectorAll('.nav-link');
+      
+      let current = '';
+      
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (window.pageYOffset >= sectionTop - 100) {
+          current = section.getAttribute('id');
+        }
+      });
+      
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('active');
+        }
+      });
+    }
+    
+    window.addEventListener('scroll', updateActiveNav);
+    window.addEventListener('load', updateActiveNav);
+
+    // Apply config to UI
+    async function onConfigChange(newConfig) {
+      const mainTitle = document.getElementById('mainTitle');
+      if (mainTitle) {
+        mainTitle.textContent = newConfig.main_title || defaultConfig.main_title;
+      }
+    }
+
+    // Element SDK integration
+    if (window.elementSdk) {
+      window.elementSdk.init({
+        defaultConfig,
+        onConfigChange,
+        mapToCapabilities: () => ({
+          recolorables: [],
+          borderables: [],
+          fontEditable: undefined,
+          fontSizeable: undefined
+        }),
+        mapToEditPanelValues: (cfg) => new Map([
+          ['main_title', cfg.main_title || defaultConfig.main_title]
+        ])
+      });
+    }
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9c10c51882c28e4f',t:'MTc2ODkzNTE1Ni4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
